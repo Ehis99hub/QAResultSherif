@@ -1,0 +1,30 @@
+
+#### SAMPLE MUTATION
+
+Notation as i'd calling it using a tool like postman or firecamp
+
+mutation{
+  Login(
+    identity:"sheriffdeensanni@gmail.com"
+    password:"password"
+    accountType:ADMINISTRATOR
+  ){
+    success
+    message
+    returnStatus
+    token
+    data
+  }
+}
+
+{"query":"mutation{\n  Login(\n    identity:\"sheriffdeensanni@gmail.com\"\n    password:\"!mHonm)Dvy\"\n    accountType:ADMINISTRATOR\n  ){\n    success\n    message\n    returnStatus\n    token\n    data\n  }\n}","variables":{}}
+
+Any of these parameters - 
+{
+    success
+    message
+    returnStatus
+    token
+    data
+  }
+  can be removed from the query to if they are not required in the response. Same applies for if there is a field not required in the Login section.

@@ -1,0 +1,35 @@
+#### SAMPLE QUERY
+
+Notation as i'd calling it using a tool like postman or firecamp
+
+
+query {
+  ListSomething(
+    TYPE:MONEY
+    status:PENDING
+    limit: 20
+    skip: 0
+  ) {
+    _id
+    disbursementType
+    userId
+      user{
+      _id
+      firstName
+      middleName
+      lastName
+      email
+      phone
+      accountType
+      age
+      religion
+      updatedByUSSD
+    }
+    somoething{
+      donationId
+      amount
+    }
+    timeCreated
+    timeUpdated
+  }
+}
